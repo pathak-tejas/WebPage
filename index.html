@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Awareness - DTCCL Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@330;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="#" class="nav-logo">DataPrivacy</a>
+            <div class="nav-links">
+                <a href="#introduction" onclick="scrollToSection('introduction')">Project Overview</a>
+                <a href="#key-facts" onclick="scrollToSection('key-facts')">Key Facts</a>
+                <a href="#visualization" onclick="scrollToSection('visualization')">Survey Results</a>
+                <a href="#action-center" onclick="scrollToSection('action-center')">Action Center</a>
+            </div>
+        </nav>
+        <div class="header-content container">
+            <h1 class="animate-h1">Data Privacy Awareness</h1>
+            <p class="subtitle animate-p">Understanding the Value of Your Digital Identity</p>
+            <p class="attribution">DTCCL Project by - Tejas Pathak - </p>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction" class="container section-padding">
+            <div class="card fade-in-up">
+                <h2>Project Overview: The Privacy Challenge</h2>
+                <p>Every click, every search, and every sign-up contributes to your **digital footprint**. This project dives into student perceptions and habits regarding data privacy. In an era of constant data breaches and pervasive tracking, being aware is the first line of defense. We aim to highlight how easy it is to compromise privacy and provide tools to regain control.</p>
+                <div class="action-buttons">
+                     <button class="gh-button primary-button" onclick="scrollToSection('key-facts')">Discover Key Facts</button>
+                    <button class="gh-button secondary-button" onclick="showModal('team-info')">Meet the Team</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-facts" class="container section-padding">
+            <h2>🚨 5 Key Facts About Student Data 🚨</h2>
+            <div class="key-facts-grid">
+                <div class="fact-card card slide-in-left">
+                    <h3>75%</h3>
+                    <p>of students worry about their personal data being sold to third parties.</p>
+                </div>
+                <div class="fact-card card slide-in-left delay-1">
+                    <h3>< 2 mins</h3>
+                    <p>It takes less than two minutes for most users to skim and accept a long privacy policy.</p>
+                </div>
+                <div class="fact-card card slide-in-right delay-2">
+                    <h3>$5.5 Million</h3>
+                    <p>The average cost of a data breach for an educational institution.</p>
+                </div>
+                <div class="fact-card card slide-in-right delay-3">
+                    <h3>2/3</h3>
+                    <p>Nearly two-thirds of students rarely or never check application permissions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visualization" class="container section-padding">
+            <h2>Survey Insights: Where Students Stand</h2>
+            <div class="charts-grid">
+                <div class="chart-card card fade-in-slow">
+                    <h3>Privacy Policy Reading Habits</h3>
+                    <div class="mock-chart-bar">
+                        <div class="bar bar-high" style="--percent: 15%;" data-label="15%">Always Read</div>
+                        <div class="bar bar-medium" style="--percent: 50%;" data-label="50%">Skim/Sometimes</div>
+                        <div class="bar bar-low" style="--percent: 35%;" data-label="35%">Never Read</div>
+                    </div>
+                </div>
+
+                <div class="chart-card card fade-in-slow delay-4">
+                    <h3>Use of VPN / Privacy Tools</h3>
+                    <div class="mock-chart-gauge">
+                        <div class="gauge-fill" style="--gauge-percent: 65%;"></div>
+                        <span class="gauge-label">65%</span>
+                    </div>
+                    <p class="chart-caption">Only **65%** use a VPN or privacy-focused browser regularly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="action-center" class="container section-padding">
+            <h2>Action Center: Secure Your Data Now</h2>
+            <div class="tip-list">
+                <div class="tip-item card animate-float">
+                    <h3><span class="tip-icon">⚙️</span> Control Permissions</h3>
+                    <p>Regularly review and revoke unnecessary access permissions for mobile apps and third-party services linked to your social accounts.</p>
+                </div>
+                <div class="tip-item card animate-float delay-5">
+                    <h3><span class="tip-icon">👻</span> Mask Your Identity</h3>
+                    <p>Use pseudonyms or separate "burner" email accounts for non-critical sign-ups to minimize linkage to your real identity.</p>
+                </div>
+                <div class="tip-item card animate-float delay-6">
+                    <h3><span class="tip-icon">💾</span> Data Minimization</h3>
+                    <p>Before giving away any information, ask: **"Do they really need this?"** The least data you share, the safer you are.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <p>A DTCCL Project for College. | &copy; 2025.</p>
+            <nav class="footer-nav">
+                <a href="#introduction">Overview</a>
+                <a href="#key-facts">Facts</a>
+                <a href="mailto:your.email@college.edu">Contact</a>
+                <a href="#" onclick="alert('Privacy Policy goes here!')">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="team-info" class="modal">
+        <div class="modal-content card">
+            <span class="close-button" onclick="closeModal('team-info')">&times;</span>
+            <h3>Project Team</h3>
+            <p>Project Lead: Tejas Pathak </p>
+            <p>Team Member 1: Tejas Pathak </p>
+            <p>Team Member 2: Param Shelke </p>
+            <p>Thank you for your support!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
